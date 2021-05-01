@@ -17,6 +17,21 @@
                     <div>
                         <a v-bind:href="link">Click to Learn Vue</a> <!--Dynamic Calling like {{link}} don't work directly in attributes, so v-bind directive is being used and so, flower brackets {{}} aren't needed-->
                     </div>
+
+                    <div>
+                        {{ getText() }} <!--Method Calling Dynamically using flower brackets-->
+                    </div>
+
+                    <div>
+                        {{ getAnothertext() }}
+                    </div>
+
+                    <div>
+                        {{ getMoreText() }}
+                    </div>
+
+                    <div v-html="getEvenMoreText()"> <!--HTML Directives Using HTML attributes in app.js-->
+                    </div>
                 </div>
             </div>
         </div>
