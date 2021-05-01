@@ -14,6 +14,9 @@
                 <hr/>
                 <div id="app"> <!--ATTACH VUE COMPONENT-->
                     <h3>{{title}}</h3> <!--Dynamically calling title function from app.js-->
+                    <div>
+                        <a v-bind:href="link">Click to Learn Vue</a> <!--Dynamic Calling like {{link}} don't work directly in attributes, so v-bind directive is being used and so, flower brackets {{}} aren't needed-->
+                    </div>
                 </div>
             </div>
         </div>
